@@ -10,15 +10,29 @@
         table,
         td,
         th {
-            border: 0.25px solid black;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
         }
 
         table {
             width: 80%;
+            border-collapse: collapse;
         }
 
         th {
             text-align: left;
+        }
+
+        .odd {
+            background-color: lightblue;
+        }
+
+        .critical {
+            background-color: pink;
         }
     </style>
 
@@ -71,7 +85,7 @@
 
 
 
-    <table>
+    <!-- <table>
         <tr>
             <th></th>
             <th>ABC</th>
@@ -89,7 +103,87 @@
             <td>Sports</td>
             <td>Current Affairs</td>
         </tr>
+    </table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="odd">
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr class="odd">
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr class="critical">
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr class="odd">
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr class="odd">
+                <td>1st January</td>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+        <!-- Last summary line of table -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>7524</td>
+                <td>1241</td>
+            </tr>
+        </tfoot>
+
     </table>
+
+
+
+
+
 
 
 
