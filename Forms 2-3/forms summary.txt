@@ -1,0 +1,9 @@
+<input type="text" />
+<input type="password" />
+<input type="submit" />
+<input type="radio" />
+<input type="checkbox" />
+<input type="file" />
+<textarea></textarea>
+
+<input type="date" />
