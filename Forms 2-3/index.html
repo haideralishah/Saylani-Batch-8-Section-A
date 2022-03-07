@@ -22,6 +22,11 @@
             display: block;
             margin: 0 auto;
         } */
+
+        .submit-image {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 
 </head>
@@ -29,17 +34,29 @@
 <body>
     <!-- <img src="images/shahidafridi.jpg" alt="Shahid Afridi Smiling" /> -->
 
-
-
-
     <form action="" method="post">
-        <label>
-            User Name: <input type="text" name="username" />
-        </label>
-        <br />
-        <label>
-            Password: <input type="password" name="password" />
-        </label>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label>
+                User Name: <input type="text" name="username" placeholder="Alex Bhatti" />
+            </label>
+            <br />
+            <label>
+                Password: <input type="password" name="password" />
+            </label>
+            <br />
+            <label>
+                Email: <input type="email" name="email" />
+            </label>
+            <br />
+            <label>
+                Profile URL: <input type="url" name="profile-url" />
+            </label>
+            <br />
+            <label>
+                Search: <input type="search" name="search" />
+            </label>
+        </fieldset>
         <br />
 
         Gender:
@@ -77,15 +94,46 @@
         <br />
         <br />
         <label>
-            Feedback: <textarea name="feedback" cols="30" rows="3"></textarea>
+            Feedback: <textarea placeholder="Please describe your experience." name="feedback" cols="30"
+                rows="3"></textarea>
         </label>
+        <br /> <br /> <br />
 
 
-        <br />
-        <br />
+        <!-- <select name="country-code" multiple>
+            <option value="">Select Country Code</option>
+            <option value="+92" selected>Pakistan</option>
+            <option value="+91">India</option>
+            <option value="+880">Bangladesh</option>
+            <option value="+975">Bhotan</option>
+        </select> -->
+
+
+        <input type="hidden" name="page-info" value="about" />
+        <br /><br /><br />
+
+
+        <input type="color" />
+        <input type="range" />
+
+
+
+
+
+
+
+
+
+
+
+
+        <br /><br /><br />
         <input type="submit" value="Login" />
-    </form>
+        <!-- <input class="submit-image" type="image" src="images/register.png" /> -->
 
+        <br /><br /><br />
+    </form>
+    <!-- <button>Start Game</button> -->
 </body>
 
 </html>

@@ -5,5 +5,15 @@
 <input type="checkbox" />
 <input type="file" />
 <textarea></textarea>
+<select>
+	<option></option>
+</select>
+<input type="image" />
+<button></button>
 
+	
+
+<fieldset></fieldset>
+<legend></legend>
 <input type="date" />
+<input type="hidden" />
