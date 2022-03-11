@@ -1,0 +1,248 @@
+/* h1{
+    color:red;
+    background-color: bisque;
+}
+h1{
+    color:green;
+}
+
+p{
+    background-color: cornsilk;
+}
+.even{
+    color:red;
+}
+
+h1{
+    color:brown;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Universal Selector */
+
+/* *{
+    background-color: lightgray;
+    color: brown;
+} */
+
+/* Type Selector */
+/* h1, h2{
+    border:1px dotted brown;
+    padding: 15px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+Class Selector
+.even{
+    background-color: antiquewhite;
+}
+h2.even{
+    color:green;
+}
+p.even{
+    color:chocolate;
+} */
+
+
+
+
+
+/* ID Selector */
+/* #main-heading{
+    color:blueviolet;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* li, a{
+    color:blueviolet;
+    text-decoration: none;
+} */
+/* Child Selector */
+/* li>a{
+    text-decoration: underline;
+}
+p>a{
+    color:red;
+}
+div>a{
+    color:green;
+}
+a{
+    color:blueviolet;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* i{
+    color: green;
+}
+p>i {
+    color: red;
+}
+
+i {
+    color: blue;
+}
+
+
+
+p>b {
+    color: green !important;
+}
+
+p>b {
+    color: blue;
+}
+
+b {
+    color: pink;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+} 
+
+i {
+    color: green;
+}
+i {
+    color: red;
+}
+
+b {
+    color: pink;
+}
+p>b {
+    color: blue !important;
+}
+p>b {
+    color: violet;
+}
+
+#intro {
+    font-size: 100%;
+}
+
+p {
+    font-size: 75%;
+}
