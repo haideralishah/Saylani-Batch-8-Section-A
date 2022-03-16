@@ -1,0 +1,52 @@
+
+/* Predefined names */
+/* body{
+    color:brown;
+    background-color: beige;
+} */
+
+/* RGB Values */
+    /* body{
+        color: rgb(153, 97, 59);
+        background-color: rgb(186, 240, 240);
+    } */
+
+/* Hex Codes */
+/* body{
+    color:#99613b;
+    background-color: #baf0f0;
+} */
+
+/* body{
+    background-color: #1d9bf0;
+} */
+
+
+
+
+
+
+
+
+/* HSL format */
+body{
+    background-color: hsl(204, 88%, 53%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

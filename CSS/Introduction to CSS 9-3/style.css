@@ -212,7 +212,7 @@ b {
 
 
 
-
+/* 
 
 * {
     font-family: Arial, Verdana, sans-serif;
@@ -245,4 +245,123 @@ p>b {
 
 p {
     font-size: 75%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+a{
+    text-decoration: none;
+} */
+
+/* div>ul>li>a{
+    color:cadetblue;
 }
+div>a{
+    color:burlywood;
+} */
+
+
+
+
+/* div,a
+div>a
+div a
+div+a
+div~a */
+
+/* Descendant Selector */
+/* div a{
+    color:chocolate;
+} */
+
+
+/* Adjacent Sibling Selector */
+
+
+
+
+
+
+/* h1+p{
+    color:cornflowerblue;
+    background-color: beige;
+}
+
+h1~p{
+    border: 1px solid red;
+    padding: 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, Verdana, sans-serif; /*inherit*/
+    color: #665544; /*inherit*/
+    padding: 20px; /* not inherit*/
+}
+
+.page {
+    background-color: #efefef;/*inherit*/
+    border: 1px solid #665544;/* not inherit*/
+    padding: inherit;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
