@@ -1,0 +1,43 @@
+
+
+*{
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.code{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* body{
+    font-size: 20px;
+}
+.special{
+    font-size: 75%;
+}
+.normal-size{
+    font-size: 16px;
+}
+.font-12{
+    font-size: 12px;
+} */
+
+
+
+
+
+
+
+
+
+
+body{
+    font-size: 30px;
+}
+h1{
+    font-weight: normal;
+}
+.special{
+    font-size: 1.5em;      
+    font-weight: bold;
+}
+

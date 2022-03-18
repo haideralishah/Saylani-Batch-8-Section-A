@@ -33,7 +33,22 @@ body{
     background-color: hsl(204, 88%, 53%);
 }
 
+div{
+    padding: 20px;
+    background-color: khaki;
+}
 
+
+p{
+    /* position: relative;
+    top:-40px; */
+
+    padding: 20px;
+    background-color: crimson;
+    /* opacity: 0.7; */
+    /* color:rgba(240,230,140, 0.5); */
+    color: hsla(54, 77%, 75%, 0.5);
+}
 
 
 
