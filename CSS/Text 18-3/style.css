@@ -1,12 +1,12 @@
 
 
-*{
+/* *{
     font-family: Arial, Verdana, sans-serif;
 }
 
 .code{
     font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 /* body{
     font-size: 20px;
@@ -30,7 +30,7 @@
 
 
 
-body{
+/* body{
     font-size: 30px;
 }
 h1{
@@ -39,5 +39,163 @@ h1{
 .special{
     font-size: 1.5em;      
     font-weight: bold;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @font-face {
+    font-family: 'AlexBrushRegular';
+    src: url('fonts/alex-brush/AlexBrush-Regular.ttf');
+}
+*{
+    font-family: AlexBrushRegular;
+    background-color: pink;
+    color:red;  
+}
+body{
+    border:2px dotted red;
+    padding:15px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: lowercase;
+    text-decoration: overline;
+}
+.special{
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 2em;
+}
+a{
+    text-decoration: none;
 }
 
+ */
+
+
+
+
+
+
+
+
+
+.kerning{
+    /* letter-spacing: 0.2em; */
+    /* word-spacing: 2em; */
+}
+
+
+/* h1{
+    text-indent: -400px;
+}
+p{
+    text-align: left;
+    text-align: justify;
+    text-indent: 40px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    text-shadow: -1px -1px 5px green;
+}
