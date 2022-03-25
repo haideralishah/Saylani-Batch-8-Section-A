@@ -1,0 +1,19 @@
+HTML
+CSS
+Any CSS Library
+Git
+JavaScript
+Firebase
+==First Hackathon==
+
+Web Apps
+ReactJS 
+
+Mobile Apps
+React Native
+
+Backend
+Node
+Express
+MongoDB
+

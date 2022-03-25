@@ -199,3 +199,56 @@ p{
 h1{
     text-shadow: -1px -1px 5px green;
 }
+
+
+h1:first-letter{
+    color:red;
+}
+p:first-line{
+    color:cadetblue;      
+}
+
+a:visited{
+    color:tomato;
+}
+a:link{
+    color:cornflowerblue;
+}
+
+h1:hover{
+    background-color: lightblue;
+}
+
+input:focus{
+    background-color: aquamarine;
+}
+
+button:active{
+    background-color: aquamarine;
+    text-shadow: 5px 5px 5px red;
+}
+
+
+
+
+h2[title="hello"]{
+    background-color: pink;
+}
+
+h2[title^="C"]{
+    color:red;
+}
+
+
+h2[title^="C"]{
+    color:red;
+}
+
+
+h2[title*="Style"]{
+    color:green;
+}
+
+h2[title$="o"]{
+    color:chocolate;
+}

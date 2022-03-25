@@ -1,0 +1,71 @@
+/* div {
+    height: 300px;
+    width: 300px;
+    background-color: #bbbbaa;
+}
+p {
+    height: 75%;
+    width: 75%;
+    background-color: #0088dd;
+}
+.orphan-para{
+    height: 500px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* div>p{
+    background-color: #0088dd;
+    height: 50px;
+    overflow: hidden;
+    overflow: scroll;
+} */
+
+
+
+
+
+
+
+p{
+    padding: 10px;
+    /* border: 1px solid black; */
+    /* border-width:1px 2px 4px 8px; */
+    /* border-width: 4px 8px; */
+    /* border-width: 4px; */
+   
+    /* border-top-width: 1px; */
+    border-left-width: 5px;
+    /* border-bottom-width: 4px;
+    border-right-width: 5px; */
+    
+    
+    border-style: solid dotted dashed double;
+    /* border-style: dotted double; */
+        /* border-top-style: solid;
+        border-left-style: dotted;
+        border-bottom-style: dashed;
+        border-right-style: double; */
+
+
+        /* border-color: black red green blue; */
+        /* border-color: red green ;
+        border-color: red; */
+        border-top-color: black;
+        border-left-color: red;
+        border-bottom-color: green;
+        border-right-color: blue;
+ 
+
+
+}
+
