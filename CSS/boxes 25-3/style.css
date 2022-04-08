@@ -36,36 +36,140 @@ p {
 
 
 
-p{
-    padding: 10px;
+p {
+    /* padding: 10px; */
     /* border: 1px solid black; */
+
     /* border-width:1px 2px 4px 8px; */
     /* border-width: 4px 8px; */
     /* border-width: 4px; */
-   
+
     /* border-top-width: 1px; */
-    border-left-width: 5px;
+    /* border-left-width: 5px; */
     /* border-bottom-width: 4px;
     border-right-width: 5px; */
-    
-    
-    border-style: solid dotted dashed double;
+
+
+    /* border-style: solid dotted dashed double; */
     /* border-style: dotted double; */
-        /* border-top-style: solid;
+    /* border-top-style: solid;
         border-left-style: dotted;
         border-bottom-style: dashed;
         border-right-style: double; */
 
 
-        /* border-color: black red green blue; */
-        /* border-color: red green ;
+    /* border-color: black red green blue; */
+    /* border-color: red green ;
         border-color: red; */
-        border-top-color: black;
+    /* border-top-color: black;
         border-left-color: red;
         border-bottom-color: green;
-        border-right-color: blue;
- 
+        border-right-color: blue; */
+
 
 
 }
 
+
+
+
+
+
+
+
+p {
+    /* padding: 20px; */
+    /* padding: 20px 50px;
+        padding: 20px 50px 30px 80px; */
+    /* padding-right: 100px; */
+
+    /* margin: 40px;
+    margin: 40px 60px;
+    margin: 40px 60px 90px 10px;
+    margin-bottom: 300px; */
+}
+
+
+
+
+
+
+p {
+    /* text-align: right; */
+    /* width: 80%;
+    margin: 0 auto; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    /* background-color: antiquewhite;
+    display: inline; 
+    display: inline-block; 
+    width: 400px; */
+}
+
+.block-span {
+    /* background-color: brown; */
+    /* display: block;
+    display: none; */
+}
+
+/* .underline{
+    text-decoration: underline;
+} */
+
+.hide {
+    /* display: none; */
+    /* visibility: hidden; */
+    /* visibility: visible; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    background-color: pink;
+    padding: 20px;
+    border: 5px solid transparent;
+    border-image: url("images/heartborder.png") 30 30 30 30 round;
+} */
+h1{
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: -5px -5px 15px gray;
+}

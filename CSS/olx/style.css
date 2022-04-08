@@ -1,93 +1,226 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     background-color: #f7f8f8;
     padding: 2%;
 }
-.logo-container{
+
+.logo-container {
     padding: 15px;
-    display: flex;    
+    display: flex;
 }
-.short-nav-img, .search-btn{
+
+.short-nav-img,
+.search-btn {
     width: 30px;
     height: 30px;
 }
 
-.short-nav:link{
+.short-nav:link {
     color: #000000;
     /* font-weight: bold; */
     text-decoration: none;
 }
-.short-nav:hover{
+
+.short-nav:hover {
     color: #417cff;
 }
-.short-nav{
-    display: flex;    
+
+.short-nav {
+    display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 14px; */    
+    /* font-size: 14px; */
 }
 
-.short-nav-img, .short-nav{
+.short-nav-img,
+.short-nav {
     margin-left: 15px;
     margin-right: 15px;
 }
-.search-btn{
+
+.search-btn {
     background-color: #002f34;
     color: #ffffff;
     height: 45px;
 }
-.search-bar>select{
+
+.search-bar>select {
     width: 20%;
-   height: 45px;
+    height: 45px;
 }
-.search-container{
+
+.search-container {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search-form{
+
+.search-form {
     width: 95%;
-    height: 45px;    
+    height: 45px;
 }
-.search-bar{  
-     display: flex;
+
+.search-bar {
+    display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
-.auth-nav{
+.auth-nav {
     width: 15%;
-    height: 45px;       
+    height: 45px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.auth-nav a{
-        color:#000000;
-        font-weight: bold;
+
+.auth-nav a {
+    color: #000000;
+    font-weight: bold;
 }
 
-    .sell-btn{
-        height:10%;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        padding:23px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #23e5db #3a77ff #3a77ff #ffce32;
+.sell-btn {
+    height: 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #23e5db #3a77ff #3a77ff #ffce32;
 
-        border-radius: 30px;
+    border-radius: 30px;
 
-    }
-    .search-bar > select, .search-form{
-        border-radius: 5px 0px 0px 5px / 5px 0px 0px 5px;
-    }
+}
+
+.search-bar>select{
+    border-radius: 5px;
+}
+
+.search-form {
+    border-radius: 5px 0px 0px 5px / 5px 0px 0px 5px;
+}
+
+
+
+.products-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-margin {
+    margin-top: 100px;
+}
+
+.product {
+    width: 23%;
+    border: 1px solid #ccd5d6;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+}
+
+.product h2 {
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-bottom: 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.time-passed,
+.address {
+    font-size: 12px;
+    color: #61797d;
+    margin-top: 10px;
+
+}
+
+.time-passed {
+    padding: 0px 10px 0px 0px;
+}
+
+.address {
+    padding: 0px 0px 0px 10px;
+
+}
+
+.address-time-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    /* width: 1052; */
+    /* position: relative;
+    left: -2%;
+    padding: 0 30px; */
+    border-top: 1px solid #bcc7c9;
+    display: flex;
+    justify-content: space-around;
+    color: #002f34;
+}
+
+.footer h2 {
+    font-size: 14px;
+}
+
+.footer ul,
+.footer li {
+    list-style: none;
+    text-align: left;
+}
+.footer li{
+    margin-top: 5px;
+}
+
+.footer ul {
+    margin-left: -40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #557477;
+    font-size: 14px;
+}
+
+.footer a:hover{
+    color: #002f34;
+}
+
+.copy-right{
+    text-align: right;
+    background-color: #002f34;
+    color: #ffffff;
+    padding: 8px;
+    padding-right: 30px;
+
+    /* width:98%; */
+    /* margin-left: -2%; */
+
+}
