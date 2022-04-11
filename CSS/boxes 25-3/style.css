@@ -168,8 +168,25 @@ h1 {
     border: 5px solid transparent;
     border-image: url("images/heartborder.png") 30 30 30 30 round;
 } */
+
+
+
 h1{
     border: 1px solid black;
     padding: 10px;
-    box-shadow: -5px -5px 15px gray;
+    text-align: center;
+    box-shadow: inset -5px -5px 15px gray;
+    /* border-radius: 50px; */
+    /* border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px; */
+    /* border-top-right-radius: 50px; */
+    /* border-bottom-right-radius: 30px; */
+    border-radius: 10px 20px 30px 40px / 40px 10px 10px 5px; 
+    /* first four values are horizontal and then four are vertical */
+}
+button{
+    border: 1px solid black;
+    height:80px;
+    width: 80px;
+    border-radius: 80px;
 }
