@@ -1,0 +1,174 @@
+/* body {
+    background-color: darkgray;
+    color: darkblue;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        background-color: rgb(208, 137, 32);
+        color: rgb(239, 16, 16);
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    body {
+        background-color: blanchedalmond;
+        color: brown;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.html-container,
+.css-container,
+.js-container {
+    flex: 49%;
+    border: 1px solid red;
+    padding: 5px;
+} */
+/* .html-container{
+    flex:3;
+}
+
+.css-container{
+    flex:2;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+@media screen and (min-width:400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container>div {
+        flex: 50%;
+    }
+
+
+    h2{
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .container>div {
+        flex: 20%;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

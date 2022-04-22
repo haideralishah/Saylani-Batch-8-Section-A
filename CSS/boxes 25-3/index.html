@@ -1,74 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>
+        JSON Parsing
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <!-- <h1>Hello World</h1>
-    <span class="block-span">This is inline</span>
-    <div>
-        <p>The Moog company pioneered the commercial
-            manufacture of modular voltage-controlled
-            analog <span class="underline"> synthesizer systems</span> in the early
-            1950s.The Moog company pioneered the commercial
-            manufacture of modular voltage-controlled
-            analog synthesizer systems in the early
-            1950s.</p>
-    </div>
-    <p class="orphan-para">The Moog company pioneered the commercial
-        manufacture of modular voltage-controlled
-        analog synthesizer systems in the early
-        1950s.</p>
+<body style="text-align:center;" id="body">
 
-    <ul>
-        <li>
-            <a href="#">Google</a>
-        </li>
-        <li class="hide">
-            <a href="#">YouTube</a>
-        </li>
-        <li>
-            <a href="#">Facebook</a>
-        </li>
-    </ul> -->
+    <table align="center" id="table" border="1">
+        <thead>
 
+        </thead>
+        <tbody>
 
+        </tbody>
+    </table>
 
+    <button onclick="constructTable('#table')">
+        click here
+    </button>
+    <script>
+        // these are json objects
+        var list = [
+            {
+                "msd_country": "US",
+                "msd_crncy": "USD",
+                "msd_eqy_prime_exh": "NASDAQ",
+                "msd_eqy_prim_exch_shrt": "UW",
+                "msd_id_cusip": "037833100",
+                "msd_id_isin": "US0378331005",
+                "msd_id_sedol1": "2046251",
+                "msd_name": "APPLE INC",
+                "msd_security_typ": "Common Stock"
+            },
+        ];
+        var list2 = [
+            {
+                "msd_country2": "US2",
+                "msd_crncy2": "USD2",
+                "msd_eqy_prime_exh2": "NASDAQ2",
+                "msd_eqy_prim_exch_shrt2": "UW2",
+                "msd_id_cusip2": "037833100-2",
+                "msd_id_isin2": "US0378331005-2",
+                "msd_id_sedol12": "2046251-2",
+                "msd_name2": "APPLE INC2",
+                "msd_security_typ2": "Common Stock2"
+            },
+        ];
+        //here we calling function
+        function Headers(list, selector) {
+            var columns = [];
+            var header = $("<tr>");
 
+            for (var i = 0; i < list.length; i++) {
+                var row = list[i];
 
+                for (var k in row) {
+                    columns.push(k);
+                    // Creating the header
+                    header.append($("<th>").text(k));
+                }
+            }
 
+            // Appending the header to the table
+            $(selector).append(header);
+            return columns;
+        }
+        function constructTable(selector) {
 
+            // Getting the all column names (in this header is key value which is send request to above veriable to send data)
+            var cols = Headers(list, selector);
+            // Traversing the JSON data
+            for (var i = 0; i < list.length; i++) {
+                var row = $("<tr><tr><tr><tr>");
 
+                for (var colIndex = 0; colIndex < cols.length; colIndex++) {
+                    var val = list[i][cols[colIndex]];
+                    row.append($("<td>").html(val));
+                    // row.append+= "<td>" + $(Rows_Data[j]).find(Cols[i].tagName).text() + "</td>";
 
+                }
 
+                // Adding each row to the table
 
+                $(selector).append(row);
 
-
-
-
-
-
-
-
-    <h1>I love Pakistan</h1>
-    <button>STOP</button>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, consectetur voluptas numquam maiores amet
-        magnam facilis provident suscipit dicta nihil magni voluptates rerum esse obcaecati ut fugit vero sunt ad.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, consectetur voluptas numquam maiores amet
-        magnam facilis provident suscipit dicta nihil magni voluptates rerum esse obcaecati ut fugit vero sunt ad.</p>
-
-
-
-
-
-
-
+            }
+        }
+    </script>
 </body>
 
-</html>
+</html> 

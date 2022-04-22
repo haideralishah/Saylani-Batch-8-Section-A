@@ -1,0 +1,35 @@
+
+
+/* img{
+    float: right;
+} */
+
+
+/* img{
+    display: block;
+    margin: 0 auto;
+} */
+
+
+
+
+
+
+
+
+
+
+body{
+    color:#000;
+    /* background-image: url("./images/shahidafridi.jpg");
+    background-repeat: no-repeat; */
+    /* background-repeat: repeat; */
+    /* background-attachment: fixed;
+    background-position: center bottom; */
+
+    background: #ffffff url("images/shahidafridi.jpg")
+    no-repeat scroll top right;
+    /* background-size:contain; */
+    /* background-size: 800px 1200px; */
+
+}
