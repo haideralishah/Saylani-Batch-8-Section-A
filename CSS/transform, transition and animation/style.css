@@ -1,0 +1,160 @@
+h1 {
+    /* display: inline-block;
+    border: 1px solid red;
+    padding: 15px; */
+    /* transform: translate(150px, 100px);
+    transform: rotate(180deg); */
+    /* transform: scale(0.5, 2); */
+    /* transform: skew(50deg) rotate(180deg); */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+    /* transition: transform 2s, background-color 2s, color 2s; */
+
+    /* transition: width 4s, height 4s; */
+    /* width: 170px;
+    height: 20px; */
+    /* transition: color 2s, width 3s, height 6s; */
+    /* transition: width 4s ease-in 2s; */
+}
+
+h1:hover {
+    /* transform: rotate(10deg); */
+    /* transform: rotateZ(90deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+    /* transform: scale(1.2, 1.2); */
+    /* background-color: yellow;
+    color: red; */
+    /* width: 200px; */
+    /* height: 100px; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@keyframes userName {
+    from {
+        background-color: red;
+        color: yellow;
+        width: 50%;
+transform: translateX(0px);
+border-radius: 0px;
+}
+
+to {
+    background-color: blue;
+    color: white;
+    transform: translateX(200px);
+    width: 90%;
+    border-radius: 50px;
+}
+}
+
+h1 {
+    background-color: red;
+    color: yellow;
+    width: 50%;
+    text-align: center;
+    animation-name: userName;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes userName {
+    0% {
+        background-color: blue;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: darkgreen;
+    }
+
+    75% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: crimson;
+    }
+}
+
+h1 {
+    animation-name: userName;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    /* animation-delay: 4s; */
+}
