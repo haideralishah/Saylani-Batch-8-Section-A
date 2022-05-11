@@ -1,0 +1,7 @@
+install nodejs (https://nodejs.org/en/)
+install firebase CLI (npm i -g firebase-tools)
+login with firebase on CMD (firebase login)
+
+firebase init (do as directed)
+
+firebase deploy

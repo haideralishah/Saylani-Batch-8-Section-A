@@ -149,7 +149,7 @@ p {
     }
 
 
-    h2{
+    h2 {
         font-size: 28px;
     }
 
@@ -172,3 +172,36 @@ p {
         font-size: 16px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+body {
+    background-color: darkseagreen;
+}
+
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: brown;
+    }
+} */
