@@ -93,7 +93,11 @@ confirm();
 // var num1 = "102";
 // var num2 = "200";
 // var num3 = 100;
+//          102  - 200  x 200  / 100  = -298
 // console.log(num1 - num2 * num2 / num3);
+
+//          ( 102 - 200 ) x 200  / 100
+// console.log((num1 - num2) * num2 / num3);
 
 
 
