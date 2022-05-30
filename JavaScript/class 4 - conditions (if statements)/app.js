@@ -145,18 +145,156 @@
 // Q: 11
 
 
-var secreteNum = 4;
-var userGuess = +prompt("Please pick a number from 1 to 5"); //3
+// var secreteNum = 4;
+// var userGuess = +prompt("Please pick a number from 1 to 5"); //3
 
-if (secreteNum === userGuess) {
-    console.log("Bingo! Correct answer");
-}
-else if (secreteNum + 1 === userGuess) {
-    console.log("Close enough to the correct answer");
-}
-else if (secreteNum - 1 === userGuess) {
-    console.log("Close enough to the correct answer");
-}
-else {
-    console.log('You failed.');
-}
+// if (secreteNum === userGuess) {
+//     console.log("Bingo! Correct answer");
+// }
+// else if (secreteNum + 1 === userGuess) {
+//     console.log("Close enough to the correct answer");
+// }
+// else if (secreteNum - 1 === userGuess) {
+//     console.log("Close enough to the correct answer");
+// }
+// else {
+//     console.log('You failed.');
+// }
+
+
+
+
+
+
+
+/*
+&&   and
+||   OR
+
+
+*/
+
+
+
+
+
+// var nationality = document.querySelector("#nation");
+// var visaStatus = document.querySelector("#visa");
+// var greetEl = document.querySelector("#message");
+
+// var requiredNationality = "UK";
+// var requiredVisa = "active";
+
+// function enterSwitzerLand() {
+//     if (nationality.value === requiredNationality || visaStatus.value === requiredVisa) {
+//         greetEl.innerHTML = "Welcome to SwitzerLand";
+//     }
+//     else {
+//         greetEl.innerHTML = "Sorry! go to Afghanistan";
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var qualification = document.querySelector("#qualification");
+// var enrollment = document.querySelector("#enrollment");
+// var greetEl = document.querySelector("#message");
+
+// var requiredEducation = "matric";
+// var alreadyEnrolled = "no";
+
+// function applyForAdmission() {
+//     if (qualification.value === requiredEducation && enrollment.value == alreadyEnrolled) {
+//         greetEl.innerHTML = "Congrats! You are eligible for admission.";
+//     }
+//     else {
+//         greetEl.innerHTML = "Sorry! You are not eligible for admission.";
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var num1 = +prompt('type a number');
+// var operator = prompt('Type an operator +-x/');
+// var num2 = +prompt('type another number');
+
+// if (operator === "+") {
+//     console.log(num1 + num2);
+// }
+// else if (operator === "-") {
+//     console.log(num1 - num2);
+// }
+// else if (operator === "x") {
+//     console.log(num1 * num2);
+// }
+// else if (operator === "/") {
+//     console.log(num1 / num2);
+// }
+// else if (operator === "%") {
+//     console.log(num1 % num2);
+// }
+// else {
+//     console.log("Something went wrong.");
+// }
