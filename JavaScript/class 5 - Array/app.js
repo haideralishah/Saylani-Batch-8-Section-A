@@ -219,11 +219,182 @@
 
 
 
-var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+// var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
 
 // fruits.splice(1, 2, 'grapes', 'peach');
-fruits.splice(2, 0, "grapes", "peach");
+// fruits.splice(2, 0, "grapes", "peach");
 
-console.log(fruits);
+// console.log(fruits);
 
 
+
+/*
+string
+number
+boolean
+
+object
+
+
+
+
+
+arr.pop();
+arr.push(elementsToAdd);
+
+arr.shift();
+arr.unshift(elementsToAdd);
+
+arr.splice(whereToStart, numberOfElementsToRemove, elementsToAdd);
+
+
+typeof
+Array.isArray();
+
+
+*/
+
+
+
+// var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+// var userName = "haider";
+// console.log(typeof fruits);
+
+// console.log(Array.isArray(fruits));
+// console.log(Array.isArray(userName));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+// var favFruits = fruits.slice(1, 3);
+
+// console.log(favFruits, fruits);
+
+
+// var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+// var favFruits = fruits.slice(1, 3);
+// console.log(favFruits.length);
+
+
+
+// var num = [250, 350, 450, 150, 125, 700];
+// var fruits = ['banana', 'apple', 'mango', 'watermelon', 'apple', 'orange'];
+// console.log(num.sort());
+// console.log(fruits.sort());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var carsName = "khyber - mehran - cyber truck - fx - sharade";
+// var carsArr = carsName.split(" - ");
+// console.log(carsArr);
+
+// var userName = "Haider Ali Shah";
+// console.log(userName.split(" "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var nic = "42111:541111:1";
+// var nicSplitted = nic.split(":");
+// var nicFormatted = nicSplitted.join("-");
+
+// var userName = ["haider", "ali", "shah"];
+// var fullName = userName.join(" ");
+
+// console.log(fullName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var secA = ["ali", "akram", "Riaz"];
+// var secB = ["Taha", "imran", "zain"];
+
+// var webClass = secA.concat(secB);
+
+// console.log(webClass, secA, secB);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var fruits = ['apple', 'banana', 'orange', 'mango', 'banana', 'watermelon'];
+
+var checkFruit = prompt("let us know fruit name?");
+
+console.log(fruits.indexOf(checkFruit));
+
+console.log(fruits.includes(checkFruit));
