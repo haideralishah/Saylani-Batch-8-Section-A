@@ -201,17 +201,221 @@ any change in iteration
 
 
 
-var numArr = [100, 200, 150, 500, 50, 170];
-var largestNumber = 0; // 100
-for (var i = 0; i < numArr.length; i++) {
-    if (numArr[5] > largestNumber) {
-        largestNumber = numArr[i];
-    }
-    // if (largestNumber && numArr[i] > largestNumber) {
-    //     largestNumber = numArr[i];
-    // }
-    // else if (!largestNumber) {
-    //     largestNumber = numArr[i];
-    // }
+// var numArr = [100, 200, 150, 500, 50, 170];
+// var largestNumber = 0; // 100
+// for (var i = 0; i < numArr.length; i++) {
+//     if (numArr[5] > largestNumber) {
+//         largestNumber = numArr[i];
+//     }
+//     // if (largestNumber && numArr[i] > largestNumber) {
+//     //     largestNumber = numArr[i];
+//     // }
+//     // else if (!largestNumber) {
+//     //     largestNumber = numArr[i];
+//     // }
+// }
+// console.log(largestNumber);
+
+
+
+
+
+
+
+
+
+
+// var numArr = [100, 200, 150, 500, 50, 0, -1000, 170];
+// var largestNumber;
+// var smallestNumber; // -1000
+
+// for (var i = 0; i < numArr.length; i++) {
+
+//     if (largestNumber === undefined || numArr[i] > largestNumber) {
+//         largestNumber = numArr[i];
+//     }
+//                                          // 170   <   -1000
+//     if (smallestNumber === undefined || numArr[i] < smallestNumber) {
+//         smallestNumber = numArr[i];
+//     }
+// }
+
+// console.log(largestNumber, smallestNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var age = 12;
+
+// var is14plus = age > 14 ? "Congrats! you got admission." : "Sorry! you are under age.";
+
+// console.log(is14plus);
+
+
+
+
+
+
+
+
+
+
+// var is14plus;
+// if (age > 14) {
+//     is14plus = "Congrats! you got admission."
+// }
+// else {
+//     is14plus = "Sorry! you are under age."
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var numArr = [100, 200, 150, 500, -1000, 0, 50, 170];
+// var largestNumber;
+// var smallestNumber;
+
+// for (var i = 0; i < numArr.length; i++) {
+//     largestNumber = (largestNumber === undefined || numArr[i] > largestNumber) ? numArr[i] : largestNumber;
+//     smallestNumber = (smallestNumber === undefined || numArr[i] < smallestNumber) ? numArr[i] : smallestNumber;
+// }
+
+// console.log(largestNumber, smallestNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var bakeryItem = ["Pastries", "Biscuits", "Chips", "Apple Pie"];
+// var userRequirement = prompt('what do you want?');
+// var itemExist = document.querySelector("#bakery-item");
+
+// var itemIndex = bakeryItem.indexOf(userRequirement);
+
+// if (itemIndex !== -1) {
+//     itemExist.innerHTML = userRequirement + " is available at index " + itemIndex;
+// }
+// else {
+//     itemExist.innerHTML = userRequirement + " is not available."
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var scores = [12, 45, 3, 22, 34, 50];
+var userInput = +prompt("where to stop?");
+var index = scores.indexOf(userInput);
+for (var i = 0; i <= index; i++) {
+    console.log(scores[i]);
 }
-console.log(largestNumber);
+
+var scores = [12, 45, 3, 22, 34, 50];
+var userInput = +prompt("where to stop?");
+for (var i = 0; i < scores.length; i++) {
+    console.log(scores[i]);
+    if (userInput === scores[i]) {
+        break;
+    }
+}
+
+
+
+
+
+
+
+
+for (var i = userInput; i <= 0; i = i - 0.5) {
+}
