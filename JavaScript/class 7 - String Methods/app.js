@@ -505,11 +505,72 @@
 // Input: ['aklama', 'akram', 'akbar']
 // Output: "ak"
 // Input: ['java', 'javascript', 'javacode']
-// Output: "java"
+// Output: "java",
 // Note:
 // All given inputs are in lowercase letters a-z.
 
 
+// function findLngPrefix(arr) {
+//     var itemToCheck = arr[0];
+//     var commenLngPrefix = "";
+//     var strExtract;
+//     for (var j = 0; j < itemToCheck.length; j++) {
+//         for (var i = 0; i < itemToCheck.length; i++) {
+//             var isFoundInAll = true;
+//             // console.log(itemToCheck.slice(i, i + 1 + j));
+//             strExtract = itemToCheck.slice(i, i + 1 + j);
+//             for (var k = 0; k < arr.length; k++) {
+//                 // console.log(strExtract + " found in " + arr[k] + " " + arr[k].includes(strExtract));
+//                 if (arr[k].includes(strExtract) === false) {
+//                     isFoundInAll = false;
+//                     break;
+//                 }
+//             }
+//                       //j,a,v,a, ja,av,va, jav,ava, java
+//             if (isFoundInAll && commenLngPrefix.length < strExtract.length) {
+//                 commenLngPrefix = strExtract;
+//             }
+//         }
+//     }
+
+
+//     console.log(commenLngPrefix)
+
+// }
+
+// findLngPrefix(["flower", "flow", "flight"]);
+// findLngPrefix(['javascript', 'java', 'javacode']);
+// findLngPrefix(['aklama', 'akram', 'akbar']);
+// findLngPrefix(["dog", "racecar", "car"]);
+
+
+
+
+
+
+
+
+
+
+
+// var strExtract = 'javascript';
+// var arr = ['javascript', 'java', 'javacode'];
+
+// var foundInAll = true;
+
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i].includes(strExtract) === false) {
+//         foundInAll = false;
+//         break;
+//     }
+// }
+
+// if (foundInAll) {
+//     console.log('string found in every index');
+// }
+// else {
+//     console.log('string not found in every index');
+// }
 
 
 
@@ -522,17 +583,34 @@
 
 
 
-function findLngPrefix(arr) {
-    var itemToCheck = arr[0];
-    var itemChrLen = itemToCheck.length;
-    var chrCount = 0;
 
-    for (var i = 0; chrCount < itemChrLen; i++) {
-        for (var j = 0; j < itemChrLen; j++) {
-            console.log(itemToCheck.slice(j, chrCount + 1));
-        }
-        chrCount++;
-    }
-}
 
-findLngPrefix(["flower", "flow", "flight"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var str = "Lorem World War II ipsum  dolor, sit amet consectetur adipisicing World War II  elit.Vero, natus! Hic nostrum laudantium ullam numquam minus aliquid, quis ducimus.Quis ducimus repellendus esse perferendis eum illum eligendi vel inventore World War II  vitae?";
+str = str.replace(/World War II/g, "the second wolrd war");
+console.log(str);
