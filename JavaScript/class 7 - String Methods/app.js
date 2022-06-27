@@ -611,6 +611,113 @@
 
 
 
-var str = "Lorem World War II ipsum  dolor, sit amet consectetur adipisicing World War II  elit.Vero, natus! Hic nostrum laudantium ullam numquam minus aliquid, quis ducimus.Quis ducimus repellendus esse perferendis eum illum eligendi vel inventore World War II  vitae?";
-str = str.replace(/World War II/g, "the second wolrd war");
-console.log(str);
+// var str = "Lorem World War II ipsum  dolor, sit amet consectetur adipisicing World War II  elit.Vero, natus! Hic nostrum laudantium ullam numquam minus aliquid, quis ducimus.Quis ducimus repellendus esse perferendis eum illum eligendi vel inventore World War II  vitae?";
+// str = str.replace(/World War II/g, "the second wolrd war");
+// console.log(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var userName = "haidar ali";
+// var aIndexes = [];
+
+// // console.log(userName.lastIndexOf("a"));
+
+// for (var i = 0; i < userName.length; i++) {
+//     if (userName[i] === "a") {
+//         aIndexes.push(i);
+//     }
+// }
+
+// console.log(aIndexes);
+
+
+
+
+
+// function findAllIndex(str, chr) {
+//     var allIndexes = [];
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === chr) {
+//             allIndexes.push(i);
+//         }
+//     }
+//     console.log(chr + " found at following index:", allIndexes);
+// }
+
+// findAllIndex("haidar ali", "a");
+// findAllIndex("toyota corolla", "o");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
