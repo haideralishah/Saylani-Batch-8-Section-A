@@ -234,9 +234,178 @@
 
 
 
-var i = 1;
-while (i % 2 !== 0) {
-    var ranNum = Math.ceil((Math.random() * 10));
-    console.log(ranNum);
-    i = ranNum;
-}
+// var i = 1;
+// while (i % 2 !== 0) {
+//     var ranNum = Math.ceil((Math.random() * 10));
+//     console.log(ranNum);
+//     i = ranNum;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function isBoolean() {
+//     if (i === 0) return true;
+//     else return false;
+// }
+
+// var i = 0;
+
+// while (isBoolean()) {
+//     console.log("inside if statement");
+//     i++;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var i = 0;
+// // var limit = +prompt('what is the loop limit?');// 5
+// while (i < 10) {
+//     var ranNum = Math.ceil(Math.random() * 10);
+//     console.log(ranNum);
+//     i = ranNum;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var i = 0;
+
+// do {
+//     console.log(i);
+//     i++
+// } while (i < 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var secreteNumber = Math.ceil(Math.random() * 10);
+var guessCount = 0;
+do {
+    var userGuess = +prompt('Please guess our secrete number between 1 to 10.');
+    guessCount++;
+    if (userGuess === secreteNumber) {
+        console.log('Congratulations! you guess the right secrete number in ' + guessCount + " attempts.");
+    }
+    else if (userGuess > secreteNumber) {
+        console.log("Your guess is greater than our secrete number.");
+    }
+    else {
+        console.log("Your guess is less than our secrete number.");
+    }
+} while (userGuess !== secreteNumber);
+
+
+
+
+
+
+
+
+
