@@ -25,6 +25,9 @@
 
 
 /*
+localstorage.setItem("Key", "value")
+localstorage.getItem()
+
 JSON.stringify()
 JSON.parse()
 
