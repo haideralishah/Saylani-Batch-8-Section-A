@@ -7,38 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="app.js"></script>
-
-    <script>
-        function alertSum(a, b) {
-            alert(a + b)
+    <style>
+        .naya-pakistan {
+            height: 400px;
+            width: 200px;
+            background-color: green;
+            border: 2px solid black;
+            overflow: hidden;
+            padding: 25px
         }
-    </script>
+
+        .purana-pakistan {
+            height: 200px;
+            width: 150px;
+            background-color: brown;
+            border: 2px solid black;
+            overflow: hidden;
+            padding: 25px
+        }
+    </style>
+
+    <script src="app.js"></script>
 
 </head>
 
 <body>
-    <!-- <button onclick="showAlert('Kaisa diya?')">Click me!</button> -->
+    <div class="purana-pakistan">
+        <img onmouseover="changeImage()"
+            src="https://1.bp.blogspot.com/-aV2CvGgvM7o/YEI_09o2-zI/AAAAAAAADUQ/_kHUBggcfdsOnNKsk1neowa-qbwE3tt2ACPcBGAYYCw/s900/82602990_2459020644359021_5708096360570232265_n.jpg"
+            width="100" />
 
-    <input id="display" disabled />
-    <p style="color: red" id="error-elem"></p>
+        <button>Change image</button>
+    </div>
 
-    <button onClick="getValue(1)">1</button>
-    <button onClick="getValue(2)">2</button>
-    <button onClick="getValue(3)">3</button>
-    <button onClick="getValue('+')">+</button>
-    <button onClick="getValue('-')">-</button>
-    <button onClick="sum()">=</button>
-
-
-    <p id="number"></p>
-
-
-    <!-- <button onclick="alertSum(5, 2)">Sum</button> -->
-
-    <!-- <img src="https://i.ytimg.com/vi/MgKPdWb42MA/hqdefault.jpg" onmouseover="alert('dam')" /> -->
-
-    <!-- <input onfocus="this.style.marginTop='250px'; this.style.height='80px'" onblur="this.style.backgroundColor='white'" /> -->
 </body>
 
 </html>

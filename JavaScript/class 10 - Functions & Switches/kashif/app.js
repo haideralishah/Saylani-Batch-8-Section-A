@@ -1,45 +1,22 @@
-var operands = ['+', '-', '*', '/']
-
-//this function will show an alert with the text argument
-function showAlert(text) {
-    alert(text)
+function changeImage() {
+    var image = document.getElementsByTagName('img')[0]
+    var parent = image.parentElement
+    debugger
+    var newSrc = "https://i.ytimg.com/vi/ZHDGKqGTY1s/maxresdefault.jpg"
+    var oldSrc = "https://1.bp.blogspot.com/-aV2CvGgvM7o/YEI_09o2-zI/AAAAAAAADUQ/_kHUBggcfdsOnNKsk1neowa-qbwE3tt2ACPcBGAYYCw/s900/82602990_2459020644359021_5708096360570232265_n.jpg"
+    if (image.src === oldSrc) {
+        image.src = newSrc
+        parent.className = 'naya-pakistan'
+    } else {
+        image.src = oldSrc
+        parent.className = 'purana-pakistan'
+    }
 }
 
-
-/* 
-DOM === "Document Object Model"
+/*
+    1. document.getElementById()
+    2. document.getElementsByTagName()
+    3. document.getElementsByClassName()
+    4. element.parentElement
+    5. element.children[0]
 */
-
-function getValue(val) {
-    var input = document.getElementById('display')
-    var lastIndex = input.value.length - 1
-    var lastChar = input.value[lastIndex]
-    // if ((val === '+' || val === '-') && (lastChar === '+' || lastChar === '-')) {
-    if (operands.includes(val) && operands.includes(lastChar)) {
-        if (val !== lastChar) {
-            var temp = input.value.split('')
-            temp.splice(lastIndex, 1, val)
-            input.value = temp.join('')
-        }
-    } else {
-        input.value += val
-    }
-}
-
-function sum() {
-    var input = document.getElementById('display')
-    var lastChar = input.value[input.value.length - 1]
-    var errorElem = document.getElementById('error-elem')
-    // var btnElem = document.getElementById('btn-answer')
-
-    // if (lastChar === '+' || lastChar === '-') {
-    if (operands.includes(lastChar)) {
-        errorElem.innerHTML = 'Invalid Expression'
-    } else {
-        var answer = eval(input.value)
-
-        input.value = answer
-        // btnElem.innerHTML = answer
-        errorElem.innerHTML = ''
-    }
-}

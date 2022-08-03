@@ -211,28 +211,308 @@ array is special type of object
 
 
 
-var appartmentBooking = {
-    name: 'flaknaz green',
-    price: 8500000,
-    westOpenCharges: 300000,
-    corner: 250000,
-    roadFacing: 350000,
-    totalBookingAmount: function (isWestOpen, isCorner, isRoadFacing) {
-        var totalPrice = this.price;
-        if (isWestOpen) {
-            totalPrice = totalPrice + this.westOpenCharges;
-        }
-        if (isCorner) {
-            totalPrice = totalPrice + this.corner;
-        }
-        if (isRoadFacing) {
-            totalPrice = totalPrice + this.roadFacing
-        }
-        console.log(totalPrice);
-    }
+// var appartmentBooking = {
+//     name: 'flaknaz green',
+//     price: 8500000,
+//     westOpenCharges: 300000,
+//     corner: 250000,
+//     roadFacing: 350000,
+//     totalBookingAmount: function (isWestOpen, isCorner, isRoadFacing) {
+//         var totalPrice = this.price;
+//         if (isWestOpen) {
+//             totalPrice = totalPrice + this.westOpenCharges;
+//         }
+//         if (isCorner) {
+//             totalPrice = totalPrice + this.corner;
+//         }
+//         if (isRoadFacing) {
+//             totalPrice = totalPrice + this.roadFacing
+//         }
+//         console.log(totalPrice);
+//     }
+// }
+
+// appartmentBooking.totalBookingAmount(true, true, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var allPlans = [];
+// var plan1 = {
+//     transfer: 1000,
+//     price: 3.99,
+//     space: 100,
+//     pages: 10,
+//     name: "basic",
+//     isCancelable: true,
+//     features: ["SEO", "SSL"],
+//     serverInfo: {
+//         processor: 5.3,
+//         memory: 1
+//     }
+// };
+// // console.log(plan1.features);
+// // console.log(plan1.serverInfo.memory);
+// plan1.name = "premium";
+// // console.log(plan1.name);
+// delete plan1.features;
+// // console.log(plan1.features);
+// allPlans.push(plan1);
+
+
+// var plan2 = {
+//     transfer: 1000,
+//     price: 5.99,
+//     space: 100,
+//     pages: 10,
+//     name: "Professional",
+//     isCancelable: true,
+//     features: ["SEO", "SSL"],
+//     serverInfo: {
+//         processor: 5.3,
+//         memory: 1
+//     }
+// };
+// allPlans.push(plan2);
+// console.log(allPlans[1].name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var totalAmount = 0; // 400 + 7000
+var allDonations = [];
+{
+    Donor Name: xyz
+    DN Number: 45673
+    amount: 400
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var donorName = document.querySelector("#donor-name");
+var dnNumber = document.querySelector("#dn-number");
+var amount = document.querySelector("#donation-amount");
+var allDonations = [];
+var totalAmount = 0;
+
+function Donations(name, donationNumber, amount) {
+    this.donorName = name;
+    this.dnNumber = donationNumber;
+    this.amount = amount;
 }
 
-appartmentBooking.totalBookingAmount(true, true, false);
+
+function donate() {
+    totalAmount = totalAmount + Number(amount.value);
+    var newDonation = new Donations(donorName.value, dnNumber.value, Number(amount.value));
+
+    allDonations.push(newDonation);
+
+    donorName.value = "";
+    dnNumber.value = "";
+    amount.value = "";
+    console.log(allDonations, totalAmount);
+
+    saveInLocalStorage();
+}
+
+function saveInLocalStorage(){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function Student(name, rollnumber, JSSCore) {
+//     this.name = name;
+//     this.rollNum = rollnumber;
+//     this.jsScore = JSSCore;
+// }
+
+// var student1 = new Student("taha", 2643, 87);
+// var student2 = new Student("zain", 2466, 88);
+// var student3 = new Student("akram", 2555, 70);
+
+// console.log(student1, student2, student3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
