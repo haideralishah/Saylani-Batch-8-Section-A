@@ -1,0 +1,11 @@
+.image-afridi {
+    width: 150px;
+    height: 150px;
+
+}
+
+
+.hidden {
+    display: none;
+    /* visibility: hidden; */
+}

@@ -345,6 +345,42 @@
 
 
 
+function greetTodo(status) {
+    console.log(status);
+}
+
+
+
+
+
+
+
+
+
+
+// function autoProvinceFill(element) {
+//     var cityName = element.value;
+//     var provinceForm = element.nextSibling.nextSibling;
+
+//     switch (cityName.toLowerCase()) {
+//         case "karachi":
+//             provinceForm.value = "Sindh";
+//             break;
+//         case "lahore":
+//             provinceForm.value = "Punjab";
+//             break;
+//         case "peshawar":
+//             provinceForm.value = "KP";
+//             break;
+//         case "quetta":
+//             provinceForm.value = "balochistan";
+//             break;
+//         default:
+//             console.log("Please enter capital city.");
+//             provinceForm.value = "";
+//             break;
+//     }
+// }
 
 
 
@@ -359,3 +395,92 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function reading(element) {
+    element.style.color = "#fff";
+    element.style.backgroundColor = "red";
+}
+
+function inactivePara(element) {
+    element.style.color = "#000";
+    element.style.backgroundColor = "#fff";
+}
+
+
+
+// function makeInvisible(element) {
+//     element.className += " hidden"; //class="image-afridi hidden"
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var num1 = 2;
+
+// num1 = num1 + 2;
+// num1 += 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function saveNewUser(ev) {
+    ev.preventDefault();
+    
+}
