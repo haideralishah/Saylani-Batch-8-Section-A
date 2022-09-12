@@ -43,7 +43,7 @@
 
 
 // const url = "http://www.google.com";
-// url = "haider";
+// // url = "haider";
 // console.log(url);
 
 
@@ -71,7 +71,18 @@
 // let greeting = "Good morning " + fullName;
 
 
+// let firstName = `haider`;
+// let lastName = `ali`;
+// // console.log(firstName + " " + lastName);
+// console.log(`${firstName} ${lastName}`);
 
+
+
+// let tableName = prompt('which table you want to print?');
+// for (var i = 0; i < 11; i++) {
+//     // console.log(tableName + " x " + i + " = " + tableName * i)
+//     console.log(`${tableName} x ${i} = ${tableName * i}`);
+// }
 
 
 
@@ -97,14 +108,235 @@
 
 
 
-let user = {
-    name: 'haider',
-    rollNumber: 2643,
-    subject: 'JavaScript'
-}
+// let user = {
+//     name: 'haider',
+//     rollNumber: 2643,
+//     subject: 'JavaScript'
+// }
 
-let { subject } = user;
-console.log(subject);
+// let { name, rollNumber } = user;
+// console.log(name, rollNumber);
+
+
+
+
+
+
+// let tech = ['html', 'css', 'javascript'];
+
+// let [markup, , programming] = tech;
+
+// console.log(programming, markup);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function greetUser({ greetMsg, firstName, lastName }) {
+//     let msg = `${greetMsg} ${firstName} ${lastName}`;
+//     console.log(msg);
+// }
+// let paramObj = {
+//     firstName: 'haider',
+//     lastName: 'ali',
+//     greetMsg: 'hello'
+// }
+// greetUser(paramObj)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function discountedRate(price, rate = 10) {
+//     console.log(price - (price * rate / 100));
+// }
+
+// discountedRate(5000, 15);
+
+
+
+// let fruits1 = ['Apple', 'Banana', 'Mango'];
+// let fruits2 = ['Orange', 'Watermelon', 'Grapes'];
+
+// // let fruits = fruits1.concat(fruits2);
+// let fruits = [...fruits1, ...fruits2];
+
+// // let fruits1Clone = fruits1.slice(0) ;
+// let fruits1Clone = [...fruits1];
+// console.log(fruits);
+
+
+
+
+// function greet(x, ...y) {
+//     // y is an Array
+//     console.log(y);
+// }
+// greet(3, "hello", true)
+
+
+// function billHistory(firstName, billNumber, ...items) {
+//     console.log(firstName, billNumber, items);
+// }
+
+// billHistory('akram', 246481, "Daal", "Cheeni", "Salt", "Lux");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var propertyName = "subject";
+// let student = {
+//     name: 'aslam',
+//     rollNumber: 2644,
+//     [propertyName]: "javascript"
+// }
+// // student[propertyName] = "JavaScript";
+// console.log(student);
+
+
+
+
+// let student = {
+//     name: 'aslam',
+//     rollNumber: 2644,
+//     subject: "javascript"
+// }
+
+// for (var key in student) {
+//     console.log(key, student[key]);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+// let firstName = "haider";
+// let lastName = "ali";
+
+// let student = {
+//     firstName,
+//     lastName,
+//     rollNum: 2643
+// }
+// console.log(student)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ()=>{}
+
+
+// setTimeout(() => {
+//     console.log('hello');
+// }, 500);
+
+
+
+
+// let sum = function (num1, num2) {
+//     return num1 + num2;
+// }
+
+// let product = (num1, num2) => num1 * num2;
+
+// console.log(product(5, 2));
+
+
+let greet = name => `Hello ${name}`;
+
+console.log(greet('Akram'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
