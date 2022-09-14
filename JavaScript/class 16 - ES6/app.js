@@ -319,9 +319,9 @@
 // console.log(product(5, 2));
 
 
-let greet = name => `Hello ${name}`;
+// let greet = name => `Hello ${name}`;
 
-console.log(greet('Akram'));
+// console.log(greet('Akram'));
 
 
 
@@ -335,7 +335,15 @@ console.log(greet('Akram'));
 
 
 
+// function cookFood(ing1 = "tea", ing2 = "biscuits", ...restIng) {
+//     let basicMeal = `Bring ${ing1} and ${ing2}`;
+//     let anyExtraMixture = restIng.length > 0 ? `Mixture of ${restIng}` : `Nothing extra`;
+//     // console.log(basicMeal, anyExtraMixture);
+//     return { basicMeal, anyExtraMixture };
+// }
 
+// let hospitality = cookFood("biryani", 'raita', 'salad', 'labe sherin');
+// console.log(hospitality);
 
 
 
@@ -350,7 +358,15 @@ console.log(greet('Akram'));
 
 
 
+// let makeMeal = (ing1 = "tea", ing2 = "biscuits", ...restIng) => {
+//     let basicMeal = `Bring ${ing1} and ${ing2}`;
+//     let anyExtraMixture = restIng.length > 0 ? `Mixture of ${restIng}` : `Nothing extra`;
+//     // console.log(basicMeal, anyExtraMixture);
+//     return { basicMeal, anyExtraMixture };
+// }
 
+// let hospitality = makeMeal();
+// console.log(hospitality);
 
 
 
@@ -368,18 +384,31 @@ console.log(greet('Akram'));
 
 
 
+// let makeMeal = (ing1 = "tea", ing2 = "biscuits") => {
+//     return `Bring ${ing1} and ${ing2}`;
+// }
 
 
+// let makeMeal = (ing1 = "tea", ing2 = "biscuits") => `Bring ${ing1} and ${ing2}`;
 
+// let hospitality = makeMeal();
+// console.log(hospitality);
 
 
 
+// let makeMeal1 = (ing1 = "tea", ing2 = "biscuits") => ({ ing1, ing2 })
 
+// let hospitality1 = makeMeal1();
+// console.log(hospitality1);
 
 
 
+// let makeMeal = ing1 => `Bring ${ing1}`;
 
+// let makeLunch = () => `Bring Daal Chawal`;
 
+// let hospitality = makeMeal("tea");
+// console.log(hospitality);
 
 
 
@@ -387,7 +416,188 @@ console.log(greet('Akram'));
 
 
 
+// () => {
 
+// }
 
+// () => a;
 
+// a => a;
 
+// (a, b) => a + b;
+
+
+
+
+
+
+
+// let user = {
+//     name: 'Akram',
+//     greet: function () {
+//         console.log(this);
+//         let newUser = {
+//             greetOneMoreTime: function () {
+//                 console.log(this);
+//             },
+//             greetOneMoreTimeWithArrow: () => {
+//                 console.log(this);
+//             }
+//         }
+//         newUser.greetOneMoreTime();
+//         newUser.greetOneMoreTimeWithArrow();
+//     },
+//     greetWithArrow: () => {
+//         console.log(this);
+//     }
+// }
+
+// user.greet();
+// user.greetWithArrow();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr = [5, 2, 7, 4, 6, 8];
+
+// let newArr = [];
+
+// for (var i = 0; i < arr.length; i++) {
+//     let newItem = arr[i] + 2;
+//     newArr.push(newItem);
+// }
+// // console.log(newArr);
+// let arr = [5, 2, 7, 4, 6, 8];
+// var newArr = arr.map(item => item + 2);
+
+
+
+
+
+
+
+
+
+
+
+// let fruits = ['apple', 'banana', 'orange'];
+
+// let arr = [5, 2, 7, 4, 6, 8];
+// let newArr = arr.map(item => item + 2);
+// console.log(newArr);
+
+// let newArr = arr.map((item) => {
+//     return item + 2
+// });
+
+
+
+// fruits.map((fruit, index, completeArr) => {
+//     console.log(fruit, index, completeArr);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let arr = [5, 2, 7, 4, 6, 8];
+
+let fiveOrMore = arr.filter(num => num >= 5);
+
+let evens = arr.filter(num => num % 2 === 0);
+
+console.log(fiveOrMore, evens);
