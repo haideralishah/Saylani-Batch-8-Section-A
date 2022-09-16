@@ -594,10 +594,211 @@
 
 
 
-let arr = [5, 2, 7, 4, 6, 8];
+// let arr = [5, 2, 7, 4, 6, 8];
 
-let fiveOrMore = arr.filter(num => num >= 5);
+// let fiveOrMore = arr.filter(num => num >= 5);
 
-let evens = arr.filter(num => num % 2 === 0);
+// let evens = arr.filter(num => num % 2 === 0);
 
-console.log(fiveOrMore, evens);
+// console.log(fiveOrMore, evens);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let firstName = ['Akram', 'Aslam', 'Amir', 'Abdullah', 'Muzammil'];
+// let lastName = ["Khan", "Ahmed", "Khan", "Ansari", "Qureshi", "Khan"];
+
+// let fullName = firstName.map(fName => `${fName} ${lastName[Math.floor((Math.random() * 6))]}`);
+
+// let fullNames = firstName.map((fName) => {
+//     let lNameIndex = Math.floor((Math.random() * 6));
+//     return `${fName} ${lastName[lNameIndex]}`;
+// });
+
+// console.log(fullNames);
+
+
+
+
+
+// let khans = fullNames.filter(fullName => fullName.split(" ")[1] === "Khan");
+
+// console.log(khans);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let numbers = [1, 2, 3, 4];
+// let sum = numbers.reduce((result, num) => result + num, 4);
+
+// let sum = numbers.reduce((result, num) => {
+//     // console.log(result, num);
+//     return result + num
+// }, 5);
+
+// console.log(sum);
+
+
+
+
+
+
+
+
+
+// let num = [5, 2, 4, 6, 9, 1];
+// let prod = num.reduce((result, num) => result * num, 1);
+// console.log(prod);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+let petsCount = pets.reduce((result, pet) => {
+    if (result[pet]) {
+        result[pet]++;
+    }
+    else {
+        result[pet] = 1; //result.rabbit = 1
+    }
+    return result;
+}, {});
+
+console.log(petsCount);
+
+
+
+
+let num = [5, 2, 4, 6, 9, 1];
+let largestNum = num.reduce((result, num) => {
+    if (num > result) {
+        result = num;
+    }
+    return result;
+}, 0);
+console.log(largestNum);
+
+
