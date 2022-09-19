@@ -724,12 +724,6 @@
 
 
 
-
-
-
-
-
-
 // let numbers = [1, 2, 3, 4];
 // let sum = numbers.reduce((result, num) => result + num, 4);
 
@@ -776,29 +770,291 @@
 
 
 
-let pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
-let petsCount = pets.reduce((result, pet) => {
-    if (result[pet]) {
-        result[pet]++;
+// let pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+// let petsCount = pets.reduce((result, pet) => {
+//     if (result[pet]) {
+//         result[pet]++;
+//     }
+//     else {
+//         result[pet] = 1; //result.rabbit = 1
+//     }
+//     return result;
+// }, {});
+
+// console.log(petsCount);
+
+
+
+
+// let num = [5, 2, 4, 6, 9, 1];
+// let largestNum = num.reduce((result, num) => {
+//     if (num > result) {
+//         result = num;
+//     }
+//     return result;
+// }, 0);
+// console.log(largestNum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let firstArr = [1, 2, 3, 4, 5, 6];
+// let secondArr = [3, 5, 6, 7];
+
+// function isSubset(arr1, arr2) {
+//     let isAvailable = true;
+//     for (let i = 0; i < arr2.length; i++) {
+//         if (!arr1.includes(arr2[i])) {
+//             isAvailable = false;
+//             break;
+//         }
+//     }
+//     return isAvailable;
+// }
+
+// let isItSubset = isSubset(firstArr, secondArr);
+// console.log(isItSubset);
+
+
+
+
+
+// let firstArr = [1, 2, 3, 4, 5, 6];
+// let secondArr = [3, 5, 6];
+
+// function isSubset(arr1, arr2) {
+//     return arr2.every(item => arr1.includes(item));
+// }
+
+// let isItSubset = isSubset(firstArr, secondArr);
+// console.log(isItSubset);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function checkIfEven(num) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (num % 2 === 0) {
+//                 resolve();
+//             }
+//             else {
+//                 reject();
+//             }
+//         }, 1000);
+//     })
+// }
+
+// checkIfEven(6)
+//     .then(() => {
+//         console.log('Yes it is an even number');
+//     })
+//     .catch(() => {
+//         console.error("this is an odd number");
+//     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function chkAuthSec() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let time = new Date();
+//             let sec = time.getSeconds();
+//             // let sec = 13;
+//             if (sec % 5 === 0) {
+//                 reject({ error: 404, errorMessage: "You wrote wrong email or password." });
+//             }
+//             else if (sec % 2 === 0) {
+//                 resolve("authorised");
+//             }
+//             else {
+//                 resolve("unauthorised");
+//             }
+//         }, 100);
+//     });
+// }
+
+// chkAuthSec()
+//     .then((success) => {
+//         console.log(`User is ${success}.`);
+//     })
+//     .catch((error) => {
+//         console.error(error.errorMessage);
+//     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let users = [
+//     { email: 'abc@gmail.com', password: "123456" },
+//     { email: 'xyz@gmail.com', password: "ab1232" },
+//     { email: 'def@gmail.com', password: "asdfasd" },
+// ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Animal {
+    constructor(name, legsCount, color) {
+        this.name = name;
+        this.legsCount = legsCount;
+        this.color = color;
     }
-    else {
-        result[pet] = 1; //result.rabbit = 1
+    speak = "bark";
+    eat() {
+        console.log(`${this.name} eats bone.`);
     }
-    return result;
-}, {});
 
-console.log(petsCount);
+}
+
+let dog = new Animal("dog", 4, 'white');
+console.log(dog);
+dog.eat();
 
 
 
 
-let num = [5, 2, 4, 6, 9, 1];
-let largestNum = num.reduce((result, num) => {
-    if (num > result) {
-        result = num;
-    }
-    return result;
-}, 0);
-console.log(largestNum);
+
+
+
 
 
