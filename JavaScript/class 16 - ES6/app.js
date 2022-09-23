@@ -1033,28 +1033,198 @@
 
 
 
-class Animal {
-    constructor(name, legsCount, color) {
-        this.name = name;
-        this.legsCount = legsCount;
-        this.color = color;
-    }
-    speak = "bark";
-    eat() {
-        console.log(`${this.name} eats bone.`);
-    }
+// class Animal {
+//     constructor(name, legsCount, color) {
+//         this.name = name;
+//         this.legsCount = legsCount;
+//         this.color = color;
+//     }
+//     speak = "bark";
+//     eat() {
+//         console.log(`${this.name} eats bone.`);
+//     }
 
+// }
+
+// let dog = new Animal("dog", 4, 'white');
+// console.log(dog);
+// dog.eat();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Animal {
+//     constructor(name, legsCount) {
+//         this.name = name;
+//         this.legsCount = legsCount;
+//     }
+// }
+
+// class Rabit extends Animal {
+//     constructor(name, legsCount, speed, quality) {
+//         super(name, legsCount);
+//         this.speed = speed;
+//         this.quality = quality;
+//     }
+// }
+
+// class Turtle extends Animal {
+//     constructor(name, legsCount, quality, specialPower) {
+//         super(name, legsCount);
+//         this.quality = quality;
+//         this.specialPower = specialPower
+//     }
+// }
+
+// let rabit = new Rabit("rabit", 4, "fast", 'hide');
+// let turtle = new Turtle("turtle", 4, 'consistant', "hard shell");
+
+// console.log(rabit, turtle);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//     .then(response => response.json())
+//     .then((todosList) => {
+//         console.log(todosList);
+//     })
+
+
+
+
+
+fetch("https://jsonplaceholder.typicode.com/photos/")
+    .then(response => response.json())
+    .then((todos) => {
+        console.log(todos);
+        // makeUIElements(todos);
+        makeUIElementsWithReduce(todos);
+    })
+
+let div = document.querySelector(".special");
+function makeUIElementsWithReduce(todos) {
+    let element = todos.reduce((result, { url, title, thumbnailUrl }) => {
+        return result + `
+        <a href="${url}" target="_blank">
+            <figure>
+                <img src="${thumbnailUrl}" alt="${title}" />
+                <figcaption>${title}</figcaption>
+            </figure>
+        </a> <br />`;
+    }, "");
+
+    div.innerHTML = element;
 }
 
-let dog = new Animal("dog", 4, 'white');
-console.log(dog);
-dog.eat();
 
 
 
+// function makeUIElements(todos) {
 
+//     let element = "";
+//     for (let i = 0; i < todos.length; i++) {
+//         let { url, title, thumbnailUrl } = todos[i];
+//         let a = `
+//         <a href="${url}" target="_blank">
+//             <figure>
+//                 <img src="${thumbnailUrl}" alt="${title}" />
+//                 <figcaption>${title}</figcaption>
+//             </figure>
+//         </a> <br />`;
+//         element = element + a;
 
+//     }
 
+//     console.log(element);
+//     div.innerHTML = element;
 
-
-
+// }
