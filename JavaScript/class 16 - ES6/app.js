@@ -1029,10 +1029,6 @@
 
 
 
-
-
-
-
 // class Animal {
 //     constructor(name, legsCount, color) {
 //         this.name = name;
@@ -1182,28 +1178,28 @@
 
 
 
-fetch("https://jsonplaceholder.typicode.com/photos/")
-    .then(response => response.json())
-    .then((todos) => {
-        console.log(todos);
-        // makeUIElements(todos);
-        makeUIElementsWithReduce(todos);
-    })
+// fetch("https://jsonplaceholder.typicode.com/photos/")
+//     .then(response => response.json())
+//     .then((todos) => {
+//         console.log(todos);
+//         // makeUIElements(todos);
+//         makeUIElementsWithReduce(todos);
+//     })
 
-let div = document.querySelector(".special");
-function makeUIElementsWithReduce(todos) {
-    let element = todos.reduce((result, { url, title, thumbnailUrl }) => {
-        return result + `
-        <a href="${url}" target="_blank">
-            <figure>
-                <img src="${thumbnailUrl}" alt="${title}" />
-                <figcaption>${title}</figcaption>
-            </figure>
-        </a> <br />`;
-    }, "");
+// let div = document.querySelector(".special");
+// function makeUIElementsWithReduce(todos) {
+//     let element = todos.reduce((result, { url, title, thumbnailUrl }) => {
+//         return result + `
+//         <a href="${url}" target="_blank">
+//             <figure>
+//                 <img src="${thumbnailUrl}" alt="${title}" />
+//                 <figcaption>${title}</figcaption>
+//             </figure>
+//         </a> <br />`;
+//     }, "");
 
-    div.innerHTML = element;
-}
+//     div.innerHTML = element;
+// }
 
 
 
@@ -1228,3 +1224,54 @@ function makeUIElementsWithReduce(todos) {
 //     div.innerHTML = element;
 
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { user, greetUser } from "./lib.js";
+
+// import Haider from './lib.js';
+
+import * as Haider from "./lib.js";
+
+// console.log(user);
+// greetUser('abdullah');
+
+// console.log(Haider(2, 7));
+
+console.log(Haider.user);
+console.log(Haider.greetUser("Abdullah"));
