@@ -904,18 +904,18 @@
 
 
 
-// function checkIfEven(num) {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             if (num % 2 === 0) {
-//                 resolve();
-//             }
-//             else {
-//                 reject();
-//             }
-//         }, 1000);
-//     })
-// }
+function checkIfEven(num) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (num % 2 === 0) {
+                resolve();
+            }
+            else {
+                reject();
+            }
+        }, 1000);
+    })
+}
 
 // checkIfEven(6)
 //     .then(() => {
@@ -924,6 +924,7 @@
 //     .catch(() => {
 //         console.error("this is an odd number");
 //     });
+
 
 
 
@@ -1266,12 +1267,12 @@
 
 // import Haider from './lib.js';
 
-import * as Haider from "./lib.js";
+// import * as Haider from "./lib.js";
 
 // console.log(user);
 // greetUser('abdullah');
 
 // console.log(Haider(2, 7));
 
-console.log(Haider.user);
-console.log(Haider.greetUser("Abdullah"));
+// console.log(Haider.user);
+// console.log(Haider.greetUser("Abdullah"));

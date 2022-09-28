@@ -1,7 +1,6 @@
-import { app } from "./firebaseconfig.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+import { auth } from "./firebaseconfig.js";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
-const auth = getAuth(app);
 
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
@@ -9,15 +8,64 @@ let password = document.querySelector("#password");
 let btn = document.querySelector("#register");
 btn.addEventListener("click", signupUser);
 
-function signupUser() {
-    createUserWithEmailAndPassword(auth, email.value, password.value)
-        .then((user) => {
-            console.log(`User registered successfully.`, user);
-        })
-        .catch((e) => {
-            console.error(e, 'something went wrong.');
-        })
+async function signupUser() {
+    try {
+        let user = await createUserWithEmailAndPassword(auth, email.value, password.value);
+        verifyEmail()
+    }
+    catch (e) {
+        console.error(e);
+    }
 }
+
+async function verifyEmail() {
+    await sendEmailVerification(auth.currentUser);
+    console.log('please check your email address and confirm.')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
