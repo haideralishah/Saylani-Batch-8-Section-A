@@ -11,17 +11,30 @@
 
 </head>
 
-<body>
+<body id="body-el">
     <h1>Hello JavaScript</h1>
 
-    <label>Email: <input type="email" id="email" /></label><br />
-    <label>Password: <input type="password" id="password" /></label>
-    <button id="register">Register</button>
+    <label> Todo: <input type="text" id="new-todo"></label>
 
-    <a href="./signin.html">Sign In</a>
+    <button id="add-todo">Add Todo</button>
+    <br />    <br />
+    <br />
 
-    <script src="app.js" type="module"></script>
+    <ul id="all-todos">
 
+    </ul>
+
+
+
+
+    <button id="sign-out">Signout</button>
+
+
+
+
+    <script src="todos.js" type="module"></script>
+
+    
 
 
 </body>

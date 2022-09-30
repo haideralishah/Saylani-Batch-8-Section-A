@@ -11,7 +11,8 @@ btn.addEventListener("click", login);
 async function login() {
     try {
         let { user } = await signInWithEmailAndPassword(auth, email.value, password.value);
-        console.log(user);
+        // console.log(user);
+        location = "./todos.html";
     }
     catch (e) {
         console.error(e.message);
@@ -53,11 +54,11 @@ async function login() {
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
-     console.log('user found', user);
+    //  console.log('user found', user);
       const uid = user.uid;
       // ...
     } else {
-        console.log('user not found', user)
+        // console.log('user not found', user)
     }
   });
 
